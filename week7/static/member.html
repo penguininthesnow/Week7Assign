@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>成功登入</title>
+</head>
+<body>
+    <h1>歡迎光臨，這是會員頁</h1>
+    <h2 id="welcomeText">歡迎登入系統</h2>
+    <button id="btnLogout" class="logout-btn">登出系統</button>   
+
+    <hr class="divider">  <!-- 水平橫線 -->
+    
+    <div class="box">
+        <h2>查詢會員姓名</h2>
+        <input type="text" id="queryMemberId"/>
+        <button id="btnQuery">查詢</button>
+        <div id="queryResult"></div>
+    </div>
+
+    <div class="box">
+        <h2>更新我的姓名</h2>
+        <input type="text" id="newName"/>
+        <button id="btnUpdateName">更新</button>
+        <div id="updateResult"></div>
+    </div>
+
+    <div class="box">
+        <h2>誰查詢了我</h2>
+        <button id="Recordupdate">更新</button>
+        <div class="small"></div>
+        <ul id="logList"></ul>
+    </div>
+
+    <script src="/static/script.js" defer></script>
+    
+</body>
+</html>

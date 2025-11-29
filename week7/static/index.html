@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登入系統</title>
+    <script src="/static/script.js" defer></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1>歡迎光臨，請註冊登入系統</h1>
+        <h2>註冊帳號</h2>
+            <label>
+                姓名
+                <input type="text" id="signupName">
+            </label>
+            <br><br>
+
+            <label>
+                信箱
+                <input type="text" id="signupEmail">
+            </label>
+            <br><br>
+
+            <label>
+                密碼
+                <input type="password" id="signupPassword">
+            </label>
+            <br><br>
+            <label>
+                <input type="checkbox" id="agreebox">
+                我同意服務條款
+            </label>
+            <button id="btnSignup">註冊</button>
+            <div id="signupResult"></div>
+    </div>
+
+    <hr class="divider">  <!-- 水平橫線 -->
+
+    <div class="form-container">
+        <h2>登入系統</h2>
+            <label>
+                信箱
+                <input type="text" id="loginEmail">
+            </label>
+            <br><br>
+
+            <label>
+                密碼
+                <input type="password" id="loginPassword">
+            </label>
+            <br><br>
+            <button id="btnLogin">登入</button>    
+            <div id="loginResult"></div>
+    </div>
+
+</body>
+</html>
